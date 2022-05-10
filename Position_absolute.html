@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using absolute Position</title>
+    <style>
+        .Box-set1,.box{
+            border-radius: 10px;
+        }
+        .Box-set1{
+            background: whitesmoke;
+        }
+        .box{
+            background: #db2020;
+            position: absolute;       
+            /*The Absolute property hides all the boxes behind one another and shows them as one single box by default. until some box condition is applied. NOTE: conditions for box 1 and 3 are applied in the following.
+            Box 4 and 2 is hidden behind Box 5 as no style (position) is applied to them in the following.*/
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            margin: 20px;
+        }
+        .box-1{
+            bottom: 20px;
+        }
+        .box-3{
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using Absolute Position Property</h1>
+    <div class="Box-set1">
+        <div class="box box-1">Box 1</div>
+        <div class="box box-2">Box 2</div>
+        <div class="box box-3">Box 3</div>
+        <div class="box box-4">Box 4</div>
+        <div class="box box-5">Box 5</div>
+    </div>
+</body>
+</html>
